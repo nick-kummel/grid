@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: sans-serif;
+    background-color: aliceblue;
+    color: #000000;
+    background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTNjYm03Zml3OXd0bDEwNWhjaTUwZDR4cWpndndibmJjb256bDl4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKyZ41wQggCckvK/giphy.webp);
+background-size: cover;
+
+}
+
+header {
+    background-color: #ebe5e5;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 8px 16px;
+    transition: background-color 0.5s;
+}
+
+.navbar ul li a:hover{
+    background-color: #0e31cfa1;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 2.5em;
+    margin-top: 20px;
+    font-weight: 900;
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExajlwZnQ3YnZlMTQxNWZqenA5aHU2cnRmdGx6bjlhNDF0dHI2dHh6byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5kFbMBOEdWjg1nItoG/giphy.webp);
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.photo-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 15px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+.photo-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* melhorar imagem da tabela */
+
+}
+
+/* .photo-item.tall{
+    grid-row: span 2;
+} */
+
+.photo-item.wide{
+    grid-column: span 2;
+}
+
+footer{
+    font-size: 1.3em;
+    text-align: center; 
+}
